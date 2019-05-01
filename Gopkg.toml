@@ -38,16 +38,16 @@ required = [
   source = "github.com/libopenstorage/external-storage"
   branch = "openstorage-5.1"
 
-[[constraint]]
+[[override]]
   name = "github.com/libopenstorage/openstorage"
   branch = "release-6.0"
 
-[[constraint]]
+[[override]]
   name = "github.com/portworx/sched-ops"
-  branch = "master"
+  branch = "application_backup"
 
 [[override]]
-  branch = "stork-2.2"
+  branch = "master"
   name = "github.com/portworx/torpedo"
 
 [[constraint]]
@@ -114,3 +114,7 @@ required = [
 [[constraint]]
   branch = "master"
   name = "github.com/libopenstorage/gossip"
+
+[[constraint]]
+  name = "gocloud.dev"
+  version = "0.13.0"
